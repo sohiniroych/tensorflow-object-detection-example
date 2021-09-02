@@ -1,5 +1,4 @@
 # Night-time Object Detection: Tensorflow API
-
 Disclaimer: This is not an official Google product.
 
 This is an example application demonstrating how
@@ -66,13 +65,13 @@ All remaining operations should be done from the root user.
 ```
 # cd $HOME
 # git clone https://github.com/sohiniroych/tensorflow-object-detection-example
-# cp -a tensorflow-object-detection-example/object_detection_app_p3 /opt/
-# chmod u+x /opt/object_detection_app_p3/app.py
+# cp -a tensorflow-object-detection-example/object_detection_app_p1 /opt/
+# chmod u+x /opt/object_detection_app_p1/app.py
 ```
 
 This application provides a simple user authentication mechanism.
  You can change the username and password by modifying the following
- part in `/opt/object_detection_app_p3/decorator.py`.
+ part in `/opt/object_detection_app_p1/decorator.py`.
 
 ```
 USERNAME = 'username'
@@ -82,7 +81,7 @@ PASSWORD = 'passw0rd'
 ## Launch the demo application
 
 ```
-# python3 /opt/object_detection_app_p3/app.py
+# python3 /opt/object_detection_app_p1/app.py
 ```
 You have to wait around 60secs for the application to finish loading
  the pretrained model graph. You'll see the message 
