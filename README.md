@@ -4,6 +4,8 @@ Disclaimer: This is not an official Google product.
 This is an example application demonstrating how
  [TensorFlow Object Detection API][1] and [pretrained models][2]
  can be used to create a general object detection service.
+ 
+ The base code is forked from https://github.com/wingedrasengan927/Tensorflow-2-Object-Detection-API-Flask-Application
 
 ## Products
 - [TensorFlow][3]
