@@ -17,10 +17,10 @@ RUN cd /opt && \
     cd models/research && \
     protoc object_detection/protos/*.proto --python_out=.
     
-RUN cd $HOME && \
-    git clone https://github.com/sohiniroych/tensorflow-object-detection-example.git && \
-    cp -a tensorflow-object-detection-example/object_detection_app_p2 /opt/ && \
-    chmod u+x /opt/object_detection_app_p2/app.py && \
+#RUN cd $HOME && \
+#    git clone https://github.com/sohiniroych/tensorflow-object-detection-example.git && \
+#    cp -a tensorflow-object-detection-example/object_detection_app_p2 /opt/ && \
+#    chmod u+x /opt/object_detection_app_p2/app.py && \
     
     
 #RUN python3 /opt/object_detection_app_p1/app.py
