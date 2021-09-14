@@ -75,7 +75,7 @@ def is_image():
 
   return _is_image
 
-
+#change made
 class PhotoForm(Form):
   input_photo = FileField(
       'File extension should be: %s (case-insensitive)' % ', '.join(extensions),
