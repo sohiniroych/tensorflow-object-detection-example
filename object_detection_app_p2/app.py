@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-MODEL_URL = 'http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_resnet_v2_1024x1024_1.tar.gz'
+MODEL_URL = 'http://download.tensorflow.org/models/object_detection/tf2/20200711/mask_rcnn_inception_resnet_v2_1024x1024_coco17_gpu-8.tar.gz'
 
 import base64
 import io
