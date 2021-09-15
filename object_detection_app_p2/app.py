@@ -56,13 +56,6 @@ tf.gfile = tf.io.gfile
 app = Flask(__name__)
 
 
-@app.before_request
-@requires_auth
-def before_request():
-  pass
-
-
-
 content_types = {'jpg': 'image/jpeg',
                  'jpeg': 'image/jpeg',
                  'png': 'image/png'}
