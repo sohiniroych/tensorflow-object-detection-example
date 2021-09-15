@@ -39,9 +39,9 @@ import numpy as np
 from PIL import Image
 from PIL import ImageDraw
 import tensorflow as tf
-from object_detection.utils import label_map_util
-from object_detection.utils import visualization_utils as viz_utils
-from object_detection.utils import ops as utils_ops
+from utils import label_map_util
+from utils import visualization_utils as viz_utils
+from utils import ops as utils_ops
 from werkzeug.datastructures import CombinedMultiDict
 from wtforms import Form
 from wtforms import ValidationError
