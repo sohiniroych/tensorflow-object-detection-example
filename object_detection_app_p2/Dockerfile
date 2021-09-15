@@ -13,9 +13,11 @@ RUN pip3 install pillow
 
 # Install Object Detection API library
 RUN cd /opt && \
-    git clone https://github.com/tensorflow/models && \
+    git clone --depth 1 https://github.com/tensorflow/models/ && \
     cd models/research && \
-    protoc object_detection/protos/*.proto --python_out=.
+    protoc object_detection/protos/*.proto --python_out=. && \
+    cp object_detection/packages/tf2/setup.py . && \
+    pip3 install .
     
 RUN cd $HOME && \
     git clone https://github.com/sohiniroych/tensorflow-object-detection-example.git && \
