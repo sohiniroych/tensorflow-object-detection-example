@@ -20,14 +20,14 @@ RUN cd /opt && \
 RUN cd $HOME && \
     git clone https://github.com/sohiniroych/tensorflow-object-detection-example.git && \
     cp -a tensorflow-object-detection-example/object_detection_app_pnew /opt/ && \
-    chmod u+x /opt/object_detection_app_pnew/app_mask.py
+    chmod u+x /opt/object_detection_app_pnew/app.py
     
     
-RUN python3 /opt/object_detection_app_pnew/app_mask.py
+RUN python3 /opt/object_detection_app_pnew/app.py
 
     
 # expose ports
 EXPOSE 8080
 
 #Command
-CMD ["python3", "/opt/object_detection_app_pnew/app_mask.py", "serve"]
+CMD ["python3", "/opt/object_detection_app_pnew/app.py", "serve"]
