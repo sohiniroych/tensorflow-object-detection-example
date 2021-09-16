@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: od-canary
+spec:
+  replicas: 7
+  selector:
+    matchLabels:
+      app: od
+  template:
+    metadata:
+      labels:
+        app: od
+        env: canary
+    spec:
+      containers:
+        # Here is the image of the container
+        - name: od
+          image: gcr.io/instructor-partition/od-ssd
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

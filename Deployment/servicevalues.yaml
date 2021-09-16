@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: od-lb
+  labels:
+    app: od
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: od
+    version: v1
