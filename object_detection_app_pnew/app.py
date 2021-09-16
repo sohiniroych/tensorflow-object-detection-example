@@ -30,7 +30,6 @@ sys.path.append(MODEL_BASE + '/object_detection')
 sys.path.append(MODEL_BASE + '/slim')
 PATH_TO_LABELS = MODEL_BASE + '/object_detection/data/mscoco_label_map.pbtxt'
 
-from decorator import requires_auth
 from flask import Flask
 from flask import redirect
 from flask import render_template
