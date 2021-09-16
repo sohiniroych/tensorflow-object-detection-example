@@ -24,7 +24,7 @@ import pathlib
 import sys
 import tempfile
 
-MODEL_BASE = './models/research'
+MODEL_BASE = '/opt/models/research'
 sys.path.append(MODEL_BASE)
 sys.path.append(MODEL_BASE + '/object_detection')
 sys.path.append(MODEL_BASE + '/slim')
