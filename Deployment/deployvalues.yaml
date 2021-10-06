@@ -18,7 +18,7 @@ spec:
       containers:
         # Here is the image of the container
         - name: od
-          image: gcr.io/instructor-partition/od-fast
+          image: gcr.io/instructor-partition/od-fasterrcnn
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
