@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: od-canary
 spec:
-  replicas: 7
+  replicas: 10
   selector:
     matchLabels:
       app: od
