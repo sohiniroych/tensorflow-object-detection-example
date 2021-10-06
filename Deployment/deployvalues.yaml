@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: od-v1
 spec:
-  replicas: 20
+  replicas: 10
   selector:
     matchLabels:
       app: od
